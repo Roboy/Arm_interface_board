@@ -1,4 +1,4 @@
-update=Do 06 Jul 2017 00:46:35 CEST
+update=Mo 15 Jan 2018 11:49:20 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/roboy/kicad/lib
+LibDir=/home/roboy/kicad_db/lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
