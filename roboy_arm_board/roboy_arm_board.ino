@@ -1,6 +1,5 @@
 #include <Servo.h>
 #include <Wire.h>
-//#include "I2C.hpp"
 #include <BMI160Gen.h>
 
 Servo servoMotor[5];
@@ -29,6 +28,24 @@ static volatile SensorData sensorData;
 uint8_t angleCommand[5];
 bool updateMotorAngles = false, updateSensorValues = false;
 
+float convertRawAcceleration(int aRaw) {
+  // since we are using 2G range
+  // -2g maps to a raw value of -32768
+  // +2g maps to a raw value of 32767
+  
+  float a = (aRaw * 2.0) / 32768.0;
+  return a;
+}
+
+float convertRawGyro(int gRaw) {
+  // since we are using 250 degrees/seconds range
+  // -250 maps to a raw value of -32768
+  // +250 maps to a raw value of 32767
+  
+  float g = (gRaw * 250.0) / 32768.0;
+  return g;
+}
+
 void InitADC()
 {
     // Select Vref=AVcc
@@ -55,32 +72,34 @@ void setup() {
   servoMotor[3].attach(5);
   servoMotor[4].attach(6);
 
-  Wire.begin(12);                // join i2c bus with address #8
+  Wire.begin(9);                // join i2c bus with address #8
   Wire.onReceive(receiveCommand); // register event
   Wire.onRequest(requestSensorData);
 
   pinMode(2, OUTPUT); 
+  digitalWrite(2, HIGH);
+  delay(200);
+  digitalWrite(2, LOW);
+  delay(200);
+  digitalWrite(2, HIGH);
+  delay(200);
+  digitalWrite(2, LOW);
+  delay(200);
+  digitalWrite(2, HIGH);
+  delay(200);
+  digitalWrite(2, LOW);
+  delay(200);
 
   InitADC();
 
   BMI160.begin(BMI160GenClass::I2C_MODE);
-  BMI160.setGyroRate(100);
-  BMI160.setGyroRange(250);
-  BMI160.setAccelerometerRate(100);
-  BMI160.setAccelerometerRange(4);
+  BMI160.setGyroRate(25);
+  BMI160.setGyroRange(25);
+  BMI160.setAccelerometerRate(250);
+  BMI160.setAccelerometerRange(2);
 }
 
 int motor = 0;
-//
-//float convertRawGyro(int gRaw) {
-//  // since we are using 250 degrees/seconds range
-//  // -250 maps to a raw value of -32768
-//  // +250 maps to a raw value of 32767
-//
-//  float g = (gRaw * 250.0) / 32768.0;
-//
-//  return g;
-//}
 
 void loop() {
   if(updateMotorAngles){
@@ -91,17 +110,24 @@ void loop() {
       sensorData.adcValue[motor] = ReadADC(motor);
     }
     // read raw gyro measurements from device
-    int gx, gy, gz;
-    BMI160.readGyro(gx,gy,gz);
-    int ax, ay, az;
-    BMI160.readAccelerometer(ax,ay,az);
-    sensorData.gyro[0] = gx;
-    sensorData.gyro[1] = gy;
-    sensorData.gyro[2] = gz;
+    int gix, giy, giz, aix, aiy, aiz;
+    BMI160.readGyro(gix,giy,giz);
+    BMI160.readAccelerometer(aix,aiy,aiz);
+//    float ax, ay, az, gx, gy, gz;
+//    ax = convertRawAcceleration(aix);
+//    ay = convertRawAcceleration(aiy);
+//    az = convertRawAcceleration(aiz);
+//    gx = convertRawGyro(gix);
+//    gy = convertRawGyro(giy);
+//    gz = convertRawGyro(giz);
+    
+    sensorData.gyro[0] = gix;
+    sensorData.gyro[1] = giy;
+    sensorData.gyro[2] = giz;
   
-    sensorData.acc[0] = ax;
-    sensorData.acc[1] = ay;
-    sensorData.acc[2] = az;
+    sensorData.acc[0] = aix;
+    sensorData.acc[1] = aiy;
+    sensorData.acc[2] = aiz;
   }
 //  i2c_start_wait((0x68<<1)|I2C_WRITE);
 //  i2c_write(0x0c);
@@ -130,12 +156,12 @@ void receiveCommand(int howMany) {
   }
   switch(byte_counter){
     case 4:
-      digitalWrite(2, HIGH);
       switch(data[0]){
         case 1:
           commandFrame.data[0] = data[3];
           commandFrame.data[1] = data[2];
           commandFrame.data[2] = data[1];
+          digitalWrite(2, HIGH);
           break;
         case 2:
           commandFrame.data[3] = data[3];
