@@ -1,0 +1,41 @@
+### Module positions - created on Sat Mar 31 23:47:13 2018 ###
+### Printed by Pcbnew version kicad 5.0.0-rc2-dev-unknown-0f0d9af~63~ubuntu16.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val             Package                                 PosX       PosY       Rot  Side
+C1        100n            C_0402_1005Metric                    20.0573   -12.6028   90.0000  top
+C2        22u             CP_Elec_4x5.3                        50.9000    -6.7000  270.0000  top
+C3        100n            C_0402_1005Metric                    61.2000    -9.1000  270.0000  top
+C4        22p             C_0402_1005Metric                    58.0448   -10.9028  180.0000  top
+C5        22p             C_0402_1005Metric                    51.9573   -13.1028  270.0000  top
+C6        1u              C_0402_1005Metric                   151.6500    -4.5000  270.0000  top
+C7        1u              C_0402_1005Metric                   156.8500    -4.5125  270.0000  top
+C8        100n            C_0402_1005Metric                    73.0000    -9.1125   90.0000  top
+C9        100n            C_0402_1005Metric                   177.8500   -11.0000    0.0000  top
+C10       100n            C_0402_1005Metric                   176.7500    -7.5000   90.0000  top
+C11       100n            C_0402_1005Metric                    74.6500    -8.5000  180.0000  top
+C12       100n            C_0402_1005Metric                    34.6000   -11.5500  270.0000  top
+C13       100n            C_0402_1005Metric                    50.5573   -13.1153  270.0000  top
+C14       100n            C_0402_1005Metric                    94.0573    -9.9528  270.0000  top
+C15       100n            C_0402_1005Metric                   131.8073    -5.8528    0.0000  top
+C16       100n            C_0402_1005Metric                   173.5000   -11.7000  270.0000  top
+R1        10mOhm          R_1206_3216Metric                    17.6623    -2.0528  180.0000  top
+R2        10k             R_0402_1005Metric                    74.6500    -9.7000  180.0000  top
+R3        10mOhm          R_1206_3216Metric                    31.2000    -7.6950   90.0000  top
+R4        10mOhm          R_1206_3216Metric                    47.1000    -7.9950   90.0000  top
+R5        10mOhm          R_1206_3216Metric                    88.1000    -7.9950   90.0000  top
+R6        10mOhm          R_1206_3216Metric                   129.1000    -8.0050   90.0000  top
+R7        10mOhm          R_1206_3216Metric                   170.1000    -7.9950   90.0000  top
+SW1       SW_Push         SW_SPST_SKQG                        106.5000    -9.5500   90.0000  top
+U1        INA180          SOT-23-5                             17.6073   -11.9028  270.0000  top
+U2        BMI160          Bosch_LGA-14_3x2.5mm_P0.5mm         174.5500    -7.3000   90.0000  top
+U3        NTS0102         X2SON-8_1.4x1mm_P0.35mm             177.9073   -12.5528  270.0000  top
+U4        ATMEGA328-AU    TQFP-32_7x7mm_P0.8mm                 67.1000    -9.1000    0.0000  top
+U5        MIC5504-3.3YM5  SOT-23-5                            154.2500    -5.0500    0.0000  top
+U7        INA180          SOT-23-5                             32.0000   -12.1000  180.0000  top
+U8        INA180          SOT-23-5                             47.8000   -12.2000  180.0000  top
+U9        INA180          SOT-23-5                             91.4073   -10.4528  180.0000  top
+U10       INA180          SOT-23-5                            132.3573    -8.4028  270.0000  top
+U11       INA180          SOT-23-5                            170.9000   -12.2000  180.0000  top
+Y1        TSX-3225_20MHz  Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm    54.7000   -12.2000  180.0000  top
+## End
