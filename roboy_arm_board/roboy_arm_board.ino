@@ -3,23 +3,25 @@
 #include <BMI160Gen.h>
 
 Servo servoMotor[5];
+int servoPin[5] = {9, 10, 3, 5, 6};
 int adcPin[5] = {14, 15, 16, 17, 18};
 
 union I2CFrame{
   struct{
-    uint8_t angleCommand[5] = {50};
-    uint8_t gpioControl[6];
+    uint8_t angleCommand[5] = {90,90,90,90,90};
+    uint8_t servoControl;
+    uint8_t gpioControl[5];
   };
   uint8_t data[11];
 };
 
 union SensorData{
     struct{
-      uint16_t adcValue[5];
+      uint16_t adcValue[6];
       int32_t gyro[3];
       int32_t acc[3];
     };
-    uint8_t data[34];
+    uint8_t data[36];
   };
 
 static volatile I2CFrame commandFrame;
@@ -66,13 +68,14 @@ uint16_t ReadADC(uint8_t ADCchannel)
 }
 
 void setup() {
-  servoMotor[0].attach(9);
-  servoMotor[1].attach(10);
-  servoMotor[2].attach(3);
-  servoMotor[3].attach(5);
-  servoMotor[4].attach(6);
+  commandFrame.servoControl = 0xff;
+  servoMotor[0].attach(servoPin[0]);
+  servoMotor[1].attach(servoPin[1]);
+  servoMotor[2].attach(servoPin[2]);
+  servoMotor[3].attach(servoPin[3]);
+  servoMotor[4].attach(servoPin[4]);
 
-  Wire.begin(9);                // join i2c bus with address #8
+  Wire.begin(83);                // join i2c bus with address #8
   Wire.onReceive(receiveCommand); // register event
   Wire.onRequest(requestSensorData);
 
@@ -99,20 +102,21 @@ void setup() {
   BMI160.setAccelerometerRange(2);
 }
 
-int motor = 0;
-
 void loop() {
   if(updateMotorAngles){
     for(int motor = 0; motor<5; motor++)
       servoMotor[motor].write(commandFrame.angleCommand[motor]);
     updateMotorAngles = false;
-    for(int motor=0;motor<5;motor++){
-      sensorData.adcValue[motor] = ReadADC(motor);
-    }
-    // read raw gyro measurements from device
-    int gix, giy, giz, aix, aiy, aiz;
-    BMI160.readGyro(gix,giy,giz);
-    BMI160.readAccelerometer(aix,aiy,aiz);
+  }
+
+  for(int adc=0;adc<6;adc++){
+    sensorData.adcValue[adc] = ReadADC(adc);
+  }
+
+  // read raw gyro measurements from device
+  int gix, giy, giz, aix, aiy, aiz;
+  BMI160.readGyro(gix,giy,giz);
+  BMI160.readAccelerometer(aix,aiy,aiz);
 //    float ax, ay, az, gx, gy, gz;
 //    ax = convertRawAcceleration(aix);
 //    ay = convertRawAcceleration(aiy);
@@ -121,26 +125,13 @@ void loop() {
 //    gy = convertRawGyro(giy);
 //    gz = convertRawGyro(giz);
     
-    sensorData.gyro[0] = gix;
-    sensorData.gyro[1] = giy;
-    sensorData.gyro[2] = giz;
-  
-    sensorData.acc[0] = aix;
-    sensorData.acc[1] = aiy;
-    sensorData.acc[2] = aiz;
-  }
-//  i2c_start_wait((0x68<<1)|I2C_WRITE);
-//  i2c_write(0x0c);
-//  i2c_stop();
-//  i2c_rep_start((0x68<<1)|I2C_READ);
-//  byte data[6];
-//  data[0] = i2c_read(false);
-//  data[1] = i2c_read(false);
-//  data[2] = i2c_read(false);
-//  data[3] = i2c_read(false);
-//  data[4] = i2c_read(false);
-//  data[5] = i2c_read(true);
-//  i2c_stop();
+  sensorData.gyro[0] = gix;
+  sensorData.gyro[1] = giy;
+  sensorData.gyro[2] = giz;
+
+  sensorData.acc[0] = aix;
+  sensorData.acc[1] = aiy;
+  sensorData.acc[2] = aiz;
   
   delay(10);
 }
@@ -154,6 +145,7 @@ void receiveCommand(int howMany) {
     data[byte_counter] = Wire.read(); // receive byte as a character
     byte_counter++;
   }
+  uint8_t servoControl_backup = commandFrame.servoControl;
   switch(byte_counter){
     case 4:
       switch(data[0]){
@@ -180,6 +172,21 @@ void receiveCommand(int howMany) {
           break;
       }
       if(updateMotorAngles){
+        if(servoControl_backup!=commandFrame.servoControl){
+          for(int motor=0;motor<5;motor++){
+            if(commandFrame.servoControl!=0){
+              servoMotor[motor].attach(servoPin[motor]);
+            }else{
+              servoMotor[motor].detach();
+            }
+//            if(commandFrame.servoControl&(0x1<<motor)){
+//              servoMotor[motor].attach(servoPin[motor]);
+//            }else{
+//              servoMotor[motor].detach();
+//            }
+          }
+        }
+        
         digitalWrite(2, LOW);
       }
       break;
@@ -194,13 +201,13 @@ void requestSensorData()
 { 
   switch(sensor_switch){
     case 0:
-      Wire.write ((uint8_t*)sensorData.data, 10); 
+      Wire.write ((uint8_t*)sensorData.data, 12); 
     break;
     case 1:
-      Wire.write ((uint8_t*)&sensorData.data[10], 12); 
+      Wire.write ((uint8_t*)&sensorData.data[12], 12); 
     break;
     case 2:
-      Wire.write ((uint8_t*)&sensorData.data[22], 12); 
+      Wire.write ((uint8_t*)&sensorData.data[24], 12); 
     break;
   }
   
