@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Arm_interface_board-cache
+LIBS:Arm_interface_board_mirrored-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power1:+5V #PWR01
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR01
 U 1 1 5A619EFE
 P 4050 1950
 F 0 "#PWR01" H 4050 1800 50  0001 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 1550 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR03
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR03
 U 1 1 5A61AADB
 P 1450 3650
 F 0 "#PWR03" H 1450 3500 50  0001 C CNN
@@ -48,7 +48,7 @@ F 3 "" H 1450 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR04
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR04
 U 1 1 5A61AB97
 P 1450 4350
 F 0 "#PWR04" H 1450 4100 50  0001 C CNN
@@ -59,7 +59,7 @@ F 3 "" H 1450 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR05
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR05
 U 1 1 5A61AD19
 P 1150 3600
 F 0 "#PWR05" H 1150 3450 50  0001 C CNN
@@ -70,7 +70,7 @@ F 3 "" H 1150 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:R R1
+L Arm_interface_board_mirrored-rescue:R-device1 R1
 U 1 1 5A61AE01
 P 900 3700
 F 0 "R1" V 980 3700 50  0000 C CNN
@@ -81,7 +81,7 @@ F 3 "" H 900 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power1:+5VP #PWR06
+L Arm_interface_board_mirrored-rescue:+5VP-power1 #PWR06
 U 1 1 5A61B22E
 P 600 3600
 F 0 "#PWR06" H 600 3450 50  0001 C CNN
@@ -92,7 +92,7 @@ F 3 "" H 600 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C C3
+L Arm_interface_board_mirrored-rescue:C-device1 C3
 U 1 1 5A61B706
 P 2550 2250
 F 0 "C3" H 2575 2350 50  0000 L CNN
@@ -103,7 +103,7 @@ F 3 "" H 2550 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C_Small C1
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C1
 U 1 1 5A61B8CC
 P 1650 3700
 F 0 "C1" H 1660 3770 50  0000 L CNN
@@ -114,7 +114,7 @@ F 3 "" H 1650 3700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power1:GND #PWR07
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR07
 U 1 1 5A61BBAD
 P 1850 3700
 F 0 "#PWR07" H 1850 3450 50  0001 C CNN
@@ -125,7 +125,7 @@ F 3 "" H 1850 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR08
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR08
 U 1 1 5A61EBB9
 P 2400 3200
 F 0 "#PWR08" H 2400 2950 50  0001 C CNN
@@ -136,7 +136,7 @@ F 3 "" H 2400 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:CP C2
+L Arm_interface_board_mirrored-rescue:CP-device1 C2
 U 1 1 5A61EC2E
 P 2250 2250
 F 0 "C2" H 2275 2350 50  0000 L CNN
@@ -147,7 +147,7 @@ F 3 "" H 2250 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR09
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR09
 U 1 1 5A61F533
 P 7450 4000
 F 0 "#PWR09" H 7450 3850 50  0001 C CNN
@@ -158,7 +158,7 @@ F 3 "" H 7450 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:R R2
+L Arm_interface_board_mirrored-rescue:R-device1 R2
 U 1 1 5A61F576
 P 7200 4000
 F 0 "R2" V 7280 4000 50  0000 C CNN
@@ -173,7 +173,7 @@ SDA
 Text Label 5750 3900 2    60   ~ 0
 SCL
 $Comp
-L power1:GND #PWR010
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR010
 U 1 1 5A6214A7
 P 6650 3450
 F 0 "#PWR010" H 6650 3200 50  0001 C CNN
@@ -184,7 +184,7 @@ F 3 "" H 6650 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C_Small C4
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C4
 U 1 1 5A621F31
 P 7200 3000
 F 0 "C4" H 7150 3150 50  0000 L CNN
@@ -195,7 +195,7 @@ F 3 "" H 7200 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device1:C_Small C5
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C5
 U 1 1 5A621FB1
 P 7200 3400
 F 0 "C5" H 7150 3550 50  0000 L CNN
@@ -243,7 +243,7 @@ SDA
 Text Label 2250 950  2    60   ~ 0
 SCL
 $Comp
-L power1:+5VP #PWR011
+L Arm_interface_board_mirrored-rescue:+5VP-power1 #PWR011
 U 1 1 5A62438A
 P 2350 1000
 F 0 "#PWR011" H 2350 850 50  0001 C CNN
@@ -254,7 +254,7 @@ F 3 "" H 2350 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR012
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR012
 U 1 1 5A6247A0
 P 900 1250
 F 0 "#PWR012" H 900 1000 50  0001 C CNN
@@ -265,7 +265,7 @@ F 3 "" H 900 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:PWR_FLAG #FLG013
+L Arm_interface_board_mirrored-rescue:PWR_FLAG-power1 #FLG013
 U 1 1 5A625C5A
 P 900 1050
 F 0 "#FLG013" H 900 1125 50  0001 C CNN
@@ -287,7 +287,7 @@ F 3 "" H 6750 4500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power1:GND #PWR014
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR014
 U 1 1 5A62891A
 P 6750 4550
 F 0 "#PWR014" H 6750 4300 50  0001 C CNN
@@ -298,7 +298,7 @@ F 3 "" H 6750 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C_Small C11
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C11
 U 1 1 5A628AFC
 P 7000 4300
 F 0 "C11" H 7010 4370 50  0000 L CNN
@@ -342,7 +342,7 @@ F 3 "" H 4800 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR015
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR015
 U 1 1 5A629713
 P 4050 1150
 F 0 "#PWR015" H 4050 900 50  0001 C CNN
@@ -380,7 +380,7 @@ F 3 "" H 1650 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C C6
+L Arm_interface_board_mirrored-rescue:C-device1 C6
 U 1 1 5A659626
 P 1200 6450
 F 0 "C6" H 1225 6550 50  0000 L CNN
@@ -391,7 +391,7 @@ F 3 "" H 1200 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:C C7
+L Arm_interface_board_mirrored-rescue:C-device1 C7
 U 1 1 5A6596C3
 P 2450 6450
 F 0 "C7" H 2475 6550 50  0000 L CNN
@@ -402,7 +402,7 @@ F 3 "" H 2450 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR016
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR016
 U 1 1 5A659A57
 P 1000 6250
 F 0 "#PWR016" H 1000 6100 50  0001 C CNN
@@ -413,7 +413,7 @@ F 3 "" H 1000 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR017
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR017
 U 1 1 5A659C56
 P 1900 6850
 F 0 "#PWR017" H 1900 6600 50  0001 C CNN
@@ -594,7 +594,7 @@ SCK
 Text Label 2550 4300 0    60   ~ 0
 SDA1_H
 $Comp
-L conn1:CONN_02X03 J3
+L Arm_interface_board_mirrored-rescue:CONN_02X03-conn1 J3
 U 1 1 5A65CD7B
 P 6450 1750
 F 0 "J3" H 6450 1950 50  0000 C CNN
@@ -623,7 +623,7 @@ RESET
 Wire Wire Line
 	5900 1850 6200 1850
 $Comp
-L power1:+5V #PWR018
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR018
 U 1 1 5A65D7CB
 P 6800 1600
 F 0 "#PWR018" H 6800 1450 50  0001 C CNN
@@ -634,7 +634,7 @@ F 3 "" H 6800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR019
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR019
 U 1 1 5A65D85A
 P 6800 1900
 F 0 "#PWR019" H 6800 1650 50  0001 C CNN
@@ -653,7 +653,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 1650 6800 1600
 $Comp
-L power1:+5V #PWR020
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR020
 U 1 1 5A65E1D3
 P 5350 5550
 F 0 "#PWR020" H 5350 5400 50  0001 C CNN
@@ -664,7 +664,7 @@ F 3 "" H 5350 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR022
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR022
 U 1 1 5A65E46C
 P 5250 6250
 F 0 "#PWR022" H 5250 6000 50  0001 C CNN
@@ -689,7 +689,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 6600 4600 6600
 $Comp
-L device1:C_Small C9
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C9
 U 1 1 5A65FEA4
 P 2800 6600
 F 0 "C9" H 2810 6670 50  0000 L CNN
@@ -707,7 +707,7 @@ Wire Wire Line
 	3150 6350 3150 6250
 Connection ~ 3150 6250
 $Comp
-L power1:GND #PWR024
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR024
 U 1 1 5A6600A9
 P 3600 7200
 F 0 "#PWR024" H 3600 6950 50  0001 C CNN
@@ -726,7 +726,7 @@ Wire Wire Line
 	2800 7100 2800 6700
 Connection ~ 3550 7100
 $Comp
-L device1:C_Small C10
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C10
 U 1 1 5A6603EE
 P 4250 6900
 F 0 "C10" H 4260 6970 50  0000 L CNN
@@ -776,7 +776,7 @@ PB0
 Text Label 5750 4600 2    60   ~ 0
 PD4
 $Comp
-L device1:C_Small C8
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C8
 U 1 1 5A662D77
 P 2850 3000
 F 0 "C8" H 2860 3070 50  0000 L CNN
@@ -859,7 +859,7 @@ SDA
 Text Label 8850 2150 2    60   ~ 0
 SCL
 $Comp
-L power1:+3.3V #PWR025
+L Arm_interface_board_mirrored-rescue:+3.3V-power1 #PWR025
 U 1 1 5A668A88
 P 2650 6200
 F 0 "#PWR025" H 2650 6050 50  0001 C CNN
@@ -873,7 +873,7 @@ Wire Wire Line
 	2650 6250 2650 6200
 Connection ~ 2650 6250
 $Comp
-L power1:+3.3V #PWR026
+L Arm_interface_board_mirrored-rescue:+3.3V-power1 #PWR026
 U 1 1 5A66959B
 P 7550 1450
 F 0 "#PWR026" H 7550 1300 50  0001 C CNN
@@ -884,7 +884,7 @@ F 3 "" H 7550 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power1:+5V #PWR027
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR027
 U 1 1 5A669760
 P 8450 1450
 F 0 "#PWR027" H 8450 1300 50  0001 C CNN
@@ -899,7 +899,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 1450 8350 1450
 $Comp
-L power1:GND #PWR028
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR028
 U 1 1 5A66A338
 P 7700 2200
 F 0 "#PWR028" H 7700 1950 50  0001 C CNN
@@ -910,7 +910,7 @@ F 3 "" H 7700 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn1:TEST_1P Aref1
+L Arm_interface_board_mirrored-rescue:TEST_1P-conn1 Aref1
 U 1 1 5A66AC90
 P 2850 2700
 F 0 "Aref1" H 2850 2970 50  0000 C CNN
@@ -921,7 +921,7 @@ F 3 "" H 3050 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn1:TEST_1P S-IN1
+L Arm_interface_board_mirrored-rescue:TEST_1P-conn1 S-IN1
 U 1 1 5A66B334
 P 2150 3950
 F 0 "S-IN1" H 2150 4220 50  0000 C CNN
@@ -934,7 +934,7 @@ $EndComp
 Wire Wire Line
 	2150 3950 2150 4000
 $Comp
-L power1:PWR_FLAG #FLG029
+L Arm_interface_board_mirrored-rescue:PWR_FLAG-power1 #FLG029
 U 1 1 5A674AB1
 P 2650 1050
 F 0 "#FLG029" H 2650 1125 50  0001 C CNN
@@ -945,7 +945,7 @@ F 3 "" H 2650 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:PWR_FLAG #FLG031
+L Arm_interface_board_mirrored-rescue:PWR_FLAG-power1 #FLG031
 U 1 1 5A675BE8
 P 2000 1850
 F 0 "#FLG031" H 2000 1925 50  0001 C CNN
@@ -956,7 +956,7 @@ F 3 "" H 2000 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR032
+L Arm_interface_board_mirrored-rescue:+5V-power1 #PWR032
 U 1 1 5A67605C
 P 1650 1850
 F 0 "#PWR032" H 1650 1700 50  0001 C CNN
@@ -1085,7 +1085,7 @@ F 3 "~" H 1650 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device1:R R8
+L Arm_interface_board_mirrored-rescue:R-device1 R8
 U 1 1 5A7991F1
 P 1650 2100
 F 0 "R8" V 1730 2100 50  0000 C CNN
@@ -1101,7 +1101,7 @@ Connection ~ 1650 1850
 Wire Wire Line
 	1650 2350 1650 2250
 $Comp
-L power1:GND #PWR013
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR013
 U 1 1 5A7B5DED
 P 1650 2700
 F 0 "#PWR013" H 1650 2450 50  0001 C CNN
@@ -1114,7 +1114,7 @@ $EndComp
 Wire Wire Line
 	1650 2700 1650 2650
 $Comp
-L atmel1:ATMEGA328PB-AU U4
+L Arm_interface_board_mirrored-rescue:ATMEGA328PB-AU-atmel1 U4
 U 1 1 5AC76086
 P 4250 3700
 F 0 "U4" H 3150 5150 50  0000 C CNN
@@ -1247,7 +1247,7 @@ Wire Wire Line
 	2150 4600 2950 4600
 Connection ~ 2150 4000
 $Comp
-L power1:GND #PWR02
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR02
 U 1 1 5B181376
 P 4100 5400
 F 0 "#PWR02" H 4100 5150 50  0001 C CNN
@@ -1298,7 +1298,7 @@ F 3 "~" H 10450 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power1:GND #PWR021
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR021
 U 1 1 5AD18852
 P 10450 5900
 F 0 "#PWR021" H 10450 5650 50  0001 C CNN
@@ -1309,7 +1309,7 @@ F 3 "" H 10450 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:R R9
+L Arm_interface_board_mirrored-rescue:R-device1 R9
 U 1 1 5AD188CE
 P 10450 5250
 F 0 "R9" V 10530 5250 50  0000 C CNN
@@ -1343,7 +1343,7 @@ $EndComp
 Text Label 9850 5000 2    60   ~ 0
 PD4
 $Comp
-L power1:GND #PWR023
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR023
 U 1 1 5AD6B4E6
 P 10000 5900
 F 0 "#PWR023" H 10000 5650 50  0001 C CNN
@@ -1360,7 +1360,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 5000 9850 5000
 $Comp
-L conn1:CONN_02X08 J1
+L Arm_interface_board_mirrored-rescue:CONN_02X08-conn1 J1
 U 1 1 5ADC17E6
 P 8100 1800
 F 0 "J1" H 8100 2365 50  0000 C CNN

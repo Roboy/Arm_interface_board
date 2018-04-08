@@ -1,0 +1,443 @@
+Cmp-Mod V01 Created by PcbNew   date = 31/01/2018 04:43:41
+
+BeginCmp
+TimeStamp = 5A881BDA
+Path = /5A652A0C/5A653547
+Reference = J19;
+ValeurCmp = CONN_01X04;
+IdModule  = custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881AE3
+Path = /5A65CD7B
+Reference = J3;
+ValeurCmp = ICSP;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881BC0
+Path = /5A652A0C/5A653540
+Reference = J18;
+ValeurCmp = CONN_01X04;
+IdModule  = custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94D9F8
+Path = /5A5C8D8C
+Reference = U4;
+ValeurCmp = ATMEGA328-AU;
+IdModule  = Package_QFP:TQFP-32_7x7mm_P0.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881DC3
+Path = /5A84C245
+Reference = Y1;
+ValeurCmp = TSX-3225 20MHz;
+IdModule  = Crystal:Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A7E3BDB
+Path = /5A623C9F
+Reference = J6;
+ValeurCmp = JST_PHD_connector_02x05_angled_male;
+IdModule  = custom_lib:JST_S10B-PHDSS_2x05x2.00mm_Angled;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A70D854
+Path = /5A61B8CC
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881A0C
+Path = /5A61B706
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AA1ED87
+Path = /5A621F31
+Reference = C4;
+ValeurCmp = 22p;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881A28
+Path = /5A621FB1
+Reference = C5;
+ValeurCmp = 22p;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881A36
+Path = /5A659626
+Reference = C6;
+ValeurCmp = 1u;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881A44
+Path = /5A6596C3
+Reference = C7;
+ValeurCmp = 1u;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881A52
+Path = /5A662D77
+Reference = C8;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A6CAF6E
+Path = /5A65FEA4
+Reference = C9;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A6CB1EB
+Path = /5A6603EE
+Reference = C10;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AA1E8BA
+Path = /5A628AFC
+Reference = C11;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881A98
+Path = /5A652A0C/5A653613
+Reference = C12;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881AA7
+Path = /5A652A0C/5A65361A
+Reference = C13;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881AB6
+Path = /5A652A0C/5A653621
+Reference = C14;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881AC5
+Path = /5A652A0C/5A653628
+Reference = C15;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881AD4
+Path = /5A652A0C/5A65362F
+Reference = C16;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A70D69F
+Path = /5A66B334
+Reference = J1;
+ValeurCmp = TEST_1P;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A70E479
+Path = /5A66AC90
+Reference = J2;
+ValeurCmp = TEST_1P;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A6A8760
+Path = /5A669A31
+Reference = J4;
+ValeurCmp = CONN_02X07;
+IdModule  = Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881B2D
+Path = /5A652A0C/5A66DB4B
+Reference = J7;
+ValeurCmp = TEST_1P;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881B42
+Path = /5A652A0C/5A66DC24
+Reference = J9;
+ValeurCmp = TEST_1P;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881B52
+Path = /5A652A0C/5A66DD67
+Reference = J11;
+ValeurCmp = TEST_1P;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881B62
+Path = /5A652A0C/5A66DE56
+Reference = J13;
+ValeurCmp = TEST_1P;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881B72
+Path = /5A652A0C/5A66DF6C
+Reference = J15;
+ValeurCmp = TEST_1P;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94E2F2
+Path = /5A652A0C/5A653532
+Reference = J16;
+ValeurCmp = CONN_01X04;
+IdModule  = custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881BA6
+Path = /5A652A0C/5A653539
+Reference = J17;
+ValeurCmp = CONN_01X04;
+IdModule  = custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881BF4
+Path = /5A652A0C/5A65354E
+Reference = J20;
+ValeurCmp = CONN_01X04;
+IdModule  = custom_lib:TE-Connectivity_Micro-Match_connector_02x02_Pitch_1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881C0C
+Path = /5A66479B
+Reference = JP1;
+ValeurCmp = XTAL_EN1;
+IdModule  = Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AA1E5D5
+Path = /5A66486C
+Reference = JP2;
+ValeurCmp = XTAL_EN2;
+IdModule  = Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94E05A
+Path = /5A62953F
+Reference = MK1;
+ValeurCmp = Mounting_Hole_PAD;
+IdModule  = MountingHole:MountingHole_2.2mm_M2_DIN965_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A72C884
+Path = /5A6295D4
+Reference = MK2;
+ValeurCmp = Mounting_Hole_PAD;
+IdModule  = MountingHole:MountingHole_2.2mm_M2_DIN965_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881C33
+Path = /5A629673
+Reference = MK3;
+ValeurCmp = Mounting_Hole_PAD;
+IdModule  = MountingHole:MountingHole_2.2mm_M2_DIN965_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AA1E890
+Path = /5A61F576
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = Resistor_SMD:R_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94E2B9
+Path = /5A652A0C/5A653555
+Reference = R3;
+ValeurCmp = 10mOhm;
+IdModule  = Resistor_SMD:R_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94D6B7
+Path = /5A652A0C/5A65355C
+Reference = R4;
+ValeurCmp = 10mOhm;
+IdModule  = Resistor_SMD:R_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94DB33
+Path = /5A652A0C/5A653563
+Reference = R5;
+ValeurCmp = 10mOhm;
+IdModule  = Resistor_SMD:R_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A72CBF8
+Path = /5A652A0C/5A65356A
+Reference = R6;
+ValeurCmp = 10mOhm;
+IdModule  = Resistor_SMD:R_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94DE18
+Path = /5A652A0C/5A6535ED
+Reference = R7;
+ValeurCmp = 10mOhm;
+IdModule  = Resistor_SMD:R_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881CA8
+Path = /5A6283B0
+Reference = SW1;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_SMD:SW_SPST_SKQG;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94E196
+Path = /5A61A906
+Reference = U1;
+ValeurCmp = INA180;
+IdModule  = Package_TO_SOT_SMD:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881CE5
+Path = /5A623615
+Reference = U3;
+ValeurCmp = NTS0102;
+IdModule  = Package_SON:X2SON-8_1.4x1mm_P0.35mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A6CADE5
+Path = /5A658F66
+Reference = U5;
+ValeurCmp = MIC5504-3.3YM5;
+IdModule  = Package_TO_SOT_SMD:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94E338
+Path = /5A652A0C/5A653571
+Reference = U7;
+ValeurCmp = INA180;
+IdModule  = Package_TO_SOT_SMD:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94D8EE
+Path = /5A652A0C/5A653578
+Reference = U8;
+ValeurCmp = INA180;
+IdModule  = Package_TO_SOT_SMD:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94DC04
+Path = /5A652A0C/5A65357F
+Reference = U9;
+ValeurCmp = INA180;
+IdModule  = Package_TO_SOT_SMD:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94DCE3
+Path = /5A652A0C/5A653586
+Reference = U10;
+ValeurCmp = INA180;
+IdModule  = Package_TO_SOT_SMD:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A881DC2
+Path = /5A652A0C/5A653600
+Reference = U11;
+ValeurCmp = INA180;
+IdModule  = Package_TO_SOT_SMD:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A71389B
+Path = /5A622EE4
+Reference = U2;
+ValeurCmp = BMI160;
+IdModule  = Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A7E3D05
+Path = /5A61AE01
+Reference = R1;
+ValeurCmp = 10mOhm;
+IdModule  = Resistor_SMD:R_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A94D5E2
+Path = /5A61EC2E
+Reference = C2;
+ValeurCmp = 22u;
+IdModule  = Capacitor_SMD:CP_Elec_4x5.3;
+EndCmp
+
+EndListe

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Arm_interface_board_mirrored-rescue)(type Legacy)(uri ${KIPRJMOD}/Arm_interface_board_mirrored-rescue.lib)(options "")(descr ""))
+)
