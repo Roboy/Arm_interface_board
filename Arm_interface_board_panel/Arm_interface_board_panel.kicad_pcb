@@ -65,7 +65,7 @@
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
-      (usegerberattributes true)
+      (usegerberattributes false)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
       (excludeedgelayer true)
@@ -5592,7 +5592,7 @@
   (gr_line (start 242.6 98.15) (end 53 98.15) (layer Dwgs.User) (width 0.15) (tstamp 5A79F3BE))
   (gr_line (start 53 95.6) (end 242.6 95.6) (layer Dwgs.User) (width 0.15) (tstamp 5A79FEB7))
   (dimension 189.6 (width 0.3) (layer Cmts.User) (tstamp 5ACCEEC1)
-    (gr_text "189.600 mm" (at 147.8 70.6) (layer Cmts.User) (tstamp 5ACCEEC2)
+    (gr_text "189.600 mm" (at 147.8 70.6) (layer Cmts.User) (tstamp 5ACCEEC1)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (feature1 (pts (xy 242.6 81) (xy 242.6 69.25)))
