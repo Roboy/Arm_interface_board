@@ -1382,4 +1382,31 @@ Wire Wire Line
 	8350 2050 8850 2050
 Wire Wire Line
 	8850 2150 8350 2150
+$Comp
+L Arm_interface_board_mirrored-rescue:C_Small-device1 C17
+U 1 1 5ACD041E
+P 5600 5600
+F 0 "C17" H 5610 5670 50  0000 L CNN
+F 1 "100n" H 5610 5520 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5600 5600 50  0001 C CNN
+F 3 "" H 5600 5600 50  0001 C CNN
+	1    5600 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 5600 5350 5600
+Connection ~ 5350 5600
+$Comp
+L Arm_interface_board_mirrored-rescue:GND-power1 #PWR029
+U 1 1 5ACE11CF
+P 5800 5600
+F 0 "#PWR029" H 5800 5350 50  0001 C CNN
+F 1 "GND" H 5800 5450 50  0000 C CNN
+F 2 "" H 5800 5600 50  0001 C CNN
+F 3 "" H 5800 5600 50  0001 C CNN
+	1    5800 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 5600 5700 5600
 $EndSCHEMATC
