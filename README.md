@@ -45,7 +45,7 @@ https://downloads.arduino.cc/packages/package_avr_3.6.0_index.json
 to your Boards Manager.\
 
 After you do this you can install the Minicore and update the Arduino AVR boards to
-1.6.206 (AVR toolchain).
+1.6.207 (AVR toolchain).
 #### Flashing
 To flash the board you need to use an ISP programmer. The easiest way is to use
 an arduino as the programmer. You can do this by flashing any Arduino board with
