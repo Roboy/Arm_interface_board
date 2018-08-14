@@ -61,4 +61,4 @@ After you install it the flashing procedure is a bit different. You have to firs
 compile your code, and then using your freshly built avrdude version upload it
 to your board.
 
-./avrdude -Cavrdude.conf -v -pm168pb -cstk500v1 -P/dev/ttyACM0 -b19200 -D -Uflash:w:/tmp/arduino_build_401372/roboy_arm_board.ino.hex:i -F
+sudo ./avrdude -Cavrdude.conf -v -pm328p -cstk500v1 -P/dev/ttyACM0 -b19200 -D -Uflash:w:/tmp/arduino_build_401372/roboy_arm_board.ino.hex:i -F
